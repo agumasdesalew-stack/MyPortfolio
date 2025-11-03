@@ -28,12 +28,17 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background:
+    radial-gradient(1200px 300px at 50% 105%, rgba(32, 227, 240, 0.25), transparent 60%),
+    #0f1216;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+html { scroll-behavior: smooth; }
 
 button {
   border-radius: 8px;
