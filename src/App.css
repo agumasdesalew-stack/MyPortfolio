@@ -36,6 +36,14 @@
   letter-spacing: 0.2px;
 }
 
+.brand img {
+  height: 24px;
+  width: 24px;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .nav-links {
   display: flex;
   gap: 28px;

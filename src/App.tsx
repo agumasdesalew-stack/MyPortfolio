@@ -1,6 +1,7 @@
 import './App.css'
 import resumePdf from './assets/Resume-a.pdf'
 import profilePhoto from './assets/me.JPG'
+import brandIcon from './assets/icon.jpeg'
 import { useState } from 'react'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <main className="shell">
       <header className="nav">
-        <div className="brand">AGUMAS</div>
+        <div className="brand"><img src={brandIcon} alt="Agumas logo" /> AGUMAS</div>
         <nav className="nav-links">
           <a href="#home" className={active === 'home' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActive('home') }}>Home</a>
           <a href="#about" className={active === 'about' ? 'active' : ''} onClick={(e) => { e.preventDefault(); setActive('about') }}>About</a>
