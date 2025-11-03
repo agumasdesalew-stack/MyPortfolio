@@ -56,8 +56,8 @@ function App() {
           <div className="about-card">
             <h4>Who I Am</h4>
             <p>
-              Software Engineer focused on building reliable, user‑centered web applications.
-              I enjoy crafting clean UIs and scalable frontends with React, TypeScript, and modern tooling.
+              Software Engineer focused on building reliable, user‑centered web applications and mobile applications.
+              I enjoy crafting clean UIs using Webflow and scalable frontends with React, TypeScript, backend with Node.js, and mobile applications with Flutter.
             </p>
           </div>
           <div className="about-card">
@@ -78,9 +78,9 @@ function App() {
         <h3 className="section-title">Skills</h3>
         <div className="skills-grid">
           {[
-            'React', 'TypeScript', 'JavaScript (ESNext)', 'HTML/CSS',
-            'Vite', 'Redux / State Management', 'REST / GraphQL', 'Node.js',
-            'Tailwind / CSS-in-JS', 'Testing (Jest / RTL)', 'Git / GitHub', 'CI/CD'
+            'React', 'TypeScript', 'JavaScript (ESNext)', 'FLutter',
+            'Postgres', 'Redux / State Management', 'REST / GraphQL', 'Node.js',
+            'Machine Learning', 'Webflow', 'Git / GitHub', 'SQL'
           ].map((skill) => (
             <div key={skill} className="skill-chip">{skill}</div>
           ))}
