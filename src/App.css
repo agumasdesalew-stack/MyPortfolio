@@ -167,12 +167,6 @@
   border-radius: 8px; /* for anti-aliasing */
 }
 
-@media (max-width: 960px) {
-  .hero-grid { grid-template-columns: 1fr; text-align: left; }
-  .hero-right { order: -1; }
-  .hero-name { font-size: 2.6rem; }
-}
-
 /* Sections */
 .section { margin-top: 48px; }
 .section-title { font-size: 1.8rem; margin: 0 0 14px 0; }
@@ -211,7 +205,281 @@
 .contact .about-card { display: grid; gap: 14px; }
 .contact-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
+/* Tablet Styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .shell {
+    padding: 24px 28px 36px 28px;
+    border-radius: 24px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-grid {
+    gap: 24px;
+    padding-top: 32px;
+  }
+
+  .hero-name {
+    font-size: 2.8rem;
+  }
+
+  .hero-role {
+    font-size: 1.3rem;
+  }
+
+  .hex-frame {
+    width: 320px;
+    height: 380px;
+  }
+
+  .hex-photo {
+    width: 280px;
+    height: 340px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Mobile and Tablet Styles (max-width: 960px) */
 @media (max-width: 960px) {
-  .about-grid { grid-template-columns: 1fr; }
-  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 32px;
+  }
+
+  .hero-right {
+    order: -1;
+    justify-self: center;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-role {
+    font-size: 1.2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .shell {
+    padding: 20px 18px 32px 18px;
+    border-radius: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .brand img {
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero-grid {
+    padding-top: 24px;
+    gap: 24px;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .hero-role {
+    font-size: 1.1rem;
+    margin: 0 0 12px 0;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .kicker {
+    font-size: 0.9rem;
+  }
+
+  .socials {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .social {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cta {
+    margin-top: 18px;
+    gap: 10px;
+  }
+
+  .button {
+    padding: 0.75em 1.2em;
+    font-size: 0.9rem;
+  }
+
+  .hex-frame {
+    width: 280px;
+    height: 330px;
+  }
+
+  .hex-photo {
+    width: 250px;
+    height: 300px;
+  }
+
+  .section {
+    margin-top: 36px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin: 0 0 16px 0;
+  }
+
+  .about-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .about-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-card p,
+  .about-card li {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .skill-chip {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-actions .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.75rem;
+  }
+
+  .shell {
+    padding: 16px 14px 28px 14px;
+    border-radius: 16px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .hero-name {
+    font-size: 1.75rem;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+  }
+
+  .social {
+    width: 36px;
+    height: 36px;
+  }
+
+  .button {
+    padding: 0.7em 1.1em;
+    font-size: 0.85rem;
+  }
+
+  .hex-frame {
+    width: 240px;
+    height: 280px;
+  }
+
+  .hex-photo {
+    width: 210px;
+    height: 260px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-chip {
+    font-size: 0.8rem;
+  }
 }
