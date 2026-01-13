@@ -1,5 +1,5 @@
 import './App.css'
-import resumePdf from './assets/Resume-a.pdf'
+import resumePdf from './assets/new.pdf'
 import profilePhoto from './assets/me.JPG'
 import brandIcon from './assets/icon.jpeg'
 import { useState } from 'react'
